@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reminder_frequency">
+        <item>Test (every 60s)</item>
+        <item>Never</item>
+        <item>Hourly</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="faceframe_size">
+        <item>None</item>
+        <item>Far</item>
+        <item>Mid</item>
+        <item>Near</item>
+    </string-array>
+</resources>

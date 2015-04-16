@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--CheckBoxPreference
+        android:key="pref_key_clear_photos"
+        android:summary="@string/pref_summary_clear_photos"
+        android:title="@string/pref_clear_photos" /-->
+    <Preference
+        android:key="pref_key_clear_photos"
+        android:summary="@string/pref_summary_clear_photos"
+        android:title="@string/pref_clear_photos"
+        android:widgetLayout="@layout/pref_clear_photosn"
+        />
+
+    <CheckBoxPreference
+        android:key="pref_key_shutter_sound"
+        android:summary="@string/pref_summary_shutter_sound"
+        android:title="@string/pref_shutter_sound" />
+    <ListPreference
+        android:key="pref_key_reminder_frequency"
+        android:summary="@string/pref_summary_reminder_frequency"
+        android:title="@string/pref_reminder_frequency"
+        android:entryValues="@array/reminder_frequency"
+        android:entries="@array/reminder_frequency"
+        android:defaultValue="Daily"
+        android:dialogTitle="@string/pref_reminder_frequency" />
+    <ListPreference
+        android:key="pref_key_faceframe_pos"
+        android:summary="@string/pref_summary_faceframe_size"
+        android:title="@string/pref_faceframe_size"
+        android:entryValues="@array/faceframe_size"
+        android:entries="@array/faceframe_size"
+        android:defaultValue="Mid"
+        android:dialogTitle="@string/pref_faceframe_size" />
+
+</PreferenceScreen>

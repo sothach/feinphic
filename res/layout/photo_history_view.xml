@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:drawable/dark_header">
+    
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/photo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/imagef"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:background="@drawable/photo_edge_track"/>
+
+    <LinearLayout
+        android:id="@+id/text_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/photo">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@drawable/delete"
+        android:layout_gravity="top|right"
+        android:layout_alignBottom="@+id/photo"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
